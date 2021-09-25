@@ -8,6 +8,7 @@
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 
 html {
@@ -20,13 +21,6 @@ body {
   font-weight: 500;
   color: rgb(135, 135, 137);
   background-color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  position: relative;
-  overflow-x: hidden;
 }
 h1,
 h2,
@@ -62,12 +56,6 @@ h2 {
   display: block;
   margin: 0 auto;
 }
-.d-flex {
-  display: flex;
-}
-.d-block {
-  display: block;
-}
 
 img {
   max-width: 100%;
@@ -76,57 +64,48 @@ img {
 header {
   padding: 48px 128px 54px;
 }
-main {
+
+.intro-section {
+  width: 100%;
   overflow-x: hidden;
 }
 .intro {
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  width: 416.4px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro-images {
+  display: flex;
+}
+
+.intro-images-part {
+  margin-right: 16.6px;
+}
+
+.intro-images-part div {
+  margin-bottom: 16.6px;
+  width: 55.56px;
+  display: flex;
   align-items: center;
-  width: calc(100% + 4.4rem);
-  margin-left: -2.2rem;
-  align-items: center;
+  justify-content: center;
 }
 
-.intro-images1 img,
-.intro-images2 img {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 108%;
-  height: auto;
-  max-width: 110px;
-  padding: 9px;
-}
-.intro-images1 {
-  flex: 0 0 50%;
-  width: 50%;
-  justify-content: flex-end;
-  margin-bottom: 2.8rem;
-}
-
-.intro-images1 div:nth-of-type(1),
-.intro-images1 div:nth-of-type(3) {
-  margin-top: 4.1rem;
-}
-
-.intro-images2 {
-  flex: 0 0 50%;
-  width: 50%;
-  justify-content: flex-start;
-  margin-bottom: 2.8rem;
-}
-
-.intro-images2 div:nth-of-type(2) {
-  margin-top: 4.1rem;
+.p-top {
+  padding-top: 16.6px;
 }
 
 .intro-text {
-  width: 60%;
   text-align: center;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 30px;
 }
 .intro-text .intro-text-title {
   margin-bottom: 2.4rem;
+  margin-top: 3.8rem;
 }
 .intro-text .intro-text-desc {
   margin-bottom: 3.2rem;
@@ -268,6 +247,7 @@ footer .footer-title {
 }
 footer .footer-text {
   margin-bottom: 3.2rem;
+  padding: 0 30px;
 }
 footer .purple-button:hover {
   background: #b18bdd !important;

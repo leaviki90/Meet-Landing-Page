@@ -1,42 +1,31 @@
-/* ipod */
-
 /* tablet */
-@media (min-width: 820px) {
+@media (min-width: 768px) {
   header {
     padding-bottom: 6.4rem;
   }
   .intro {
-    width: 100%;
-    margin-left: 0;
-  }
-  .intro-images1,
-  .intro-images2 {
-    margin-bottom: 7.2rem;
-    flex: 0 0 calc(50% - 6.4rem);
-    width: calc(50% - 6.4rem);
+    width: 820px;
   }
 
-  .intro-images1 div,
-  .intro-images2 div {
-    margin-right: 3.2rem;
+  .intro-images-part {
+    margin-right: 32px;
   }
 
-  .intro-images2 div:last-of-type {
-    margin-right: 0;
+  .intro-images-part div {
+    margin-bottom: 32px;
+    width: 110px;
   }
 
-  .intro-images1 div img:first-of-type,
-  .intro-images2 div img:first-of-type {
-    margin-bottom: 2.8rem;
+  .p-top {
+    padding-top: 32px;
   }
-  .intro-images1 img,
-  .intro-images2 img {
-    padding: 0;
-    width: 100%;
+  .intro-text {
+    padding: 0 150px;
   }
   .intro-text .intro-text-title {
     font-size: 4.8rem;
     line-height: 4.8rem;
+    margin-top: 6.2rem;
   }
   .intro-text .download-button {
     margin-bottom: 0;
@@ -91,26 +80,51 @@
 }
 
 /* desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   header {
     padding: 8rem 0 10.8rem;
   }
 
-  .intro-images1 {
-    position: absolute;
-    top: 16.9rem;
-    left: -27rem;
+  .intro {
+    width: 1504px;
   }
-  .intro-images2 {
-    position: absolute;
-    top: 16.9rem;
-    right: -34rem;
+
+  .intro-images-part {
+    margin-right: 32px;
   }
+
+  .intro-images-part div {
+    margin-bottom: 32px;
+    width: 110px;
+  }
+
+  .p-top {
+    padding-top: 32px;
+  }
+
+  .intro-images-1 {
+    order: 1;
+  }
+
+  .intro-images-2 {
+    order: 3;
+  }
+
   .intro-text {
-    max-width: 540px;
+    text-align: center;
+    width: 540px;
+    order: 2;
+    margin-right: 83px;
+    margin-left: 83px;
+    padding: 0;
+  }
+
+  .m-768-0 {
+    margin-right: 0;
   }
   .intro-text .intro-text-title {
     margin-bottom: 3.4rem;
+    margin-top: 0;
   }
   .intro-text .intro-text-desc {
     margin-bottom: 3.2rem;
@@ -143,4 +157,8 @@
   .footer-wrapper .purple-button {
     margin-bottom: 0;
   }
+}
+
+.mr-0 {
+  margin-right: 0;
 }
