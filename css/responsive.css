@@ -3,7 +3,10 @@
   header {
     padding-bottom: 6.4rem;
   }
-
+  .intro {
+    width: 108%;
+    left: -4%;
+  }
   .intro-images-part div {
     margin-bottom: 32px;
     width: 110px;
@@ -89,9 +92,17 @@
     margin: 0 auto;
   }
   .intro {
-    width: 105%;
-    left: -2.5%;
+    width: 106%;
+    left: -3%;
   }
+  .intro img {
+    width: unset;
+  }
+
+  .intro-images {
+    flex-grow: 0;
+  }
+
   .intro .intro-text-title {
     font-size: 6.4rem;
     line-height: 6.4rem;
@@ -102,7 +113,7 @@
 
   .intro-images-part div {
     margin-bottom: 32px;
-    width: 110px;
+    width: 134px;
   }
 
   .p-top {

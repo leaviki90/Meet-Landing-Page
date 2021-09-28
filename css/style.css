@@ -58,18 +58,17 @@ img {
 header {
   padding: 48px 128px 54px;
 }
-
 .intro-section {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .intro {
   display: flex;
   flex-wrap: wrap;
   position: relative;
   justify-content: space-between;
-  width: 111%;
-  left: -5.5%;
+  width: 105%;
+  left: -2.5%;
 }
 
 .intro-images {
@@ -77,8 +76,7 @@ header {
   flex-grow: 1;
   flex-basis: 0;
 }
-.intro-images-1 {
-}
+
 .intro-images-2 {
   display: flex;
   justify-content: flex-end;
