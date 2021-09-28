@@ -39,12 +39,6 @@ h2 {
   background-color: #855fb1 !important;
 }
 
-.bluish-bg-color {
-  background: #4d96a9;
-}
-.bluish-bg-color-hover {
-  background: #71c0d4;
-}
 .subtitle {
   font-size: 1.6rem;
   color: #4d96a9;
@@ -72,18 +66,31 @@ header {
 .intro {
   display: flex;
   flex-wrap: wrap;
-  width: 416.4px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  justify-content: space-between;
+  width: 111%;
+  left: -5.5%;
 }
 
 .intro-images {
   display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.intro-images-1 {
+}
+.intro-images-2 {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .intro-images-part {
-  margin-right: 16.6px;
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+.intro img {
+  width: 100%;
 }
 
 .intro-images-part div {
@@ -109,6 +116,7 @@ header {
 }
 .intro-text .intro-text-desc {
   margin-bottom: 3.2rem;
+  font-size: 1.6rem;
 }
 .button {
   color: white;
@@ -173,7 +181,7 @@ header {
 
 /* middle-section */
 .middle-images {
-  padding: 0 2.4rem;
+  padding: 0 2.2rem;
   margin-bottom: 4.8rem;
 }
 figure {
@@ -212,6 +220,7 @@ figure img:last-of-type {
 }
 .middle-desc-text {
   margin-bottom: 12rem;
+  font-size: 1.6rem;
 }
 
 /* footer */
